@@ -47,9 +47,8 @@
     <Compile Include="Views\MemberPage.xaml.cs">
       <DependentUpon>MemberPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\BusinessEntityBase.cs" />
-    <Compile Include="Models\IBusinessEntity.cs" />
     <Compile Include="IFileHelper.cs" />
+    <Compile Include="Models\IBusinessEntity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

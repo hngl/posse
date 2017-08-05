@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:local="clr-namespace:Posse" 
     x:Class="Posse.MemberListPage"
-    Title="Posse Members">
+    Title="Members of the Posse">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="+" Clicked="OnItemAdded">
             <ToolbarItem.Icon>
