@@ -14,7 +14,7 @@ namespace Posse
 		public int ID { get; set; }
 
         // Constructor
-        public BusinessEntityBase()
+        BusinessEntityBase()
         {
         }
     }
