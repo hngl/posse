@@ -3,24 +3,16 @@
     <Application.Resources>
         <!-- Application resource dictionary -->
         <ResourceDictionary>
+            <!-- Theme colors -->
+            <Color x:Key="PrimaryColor">Black</Color>
+            <Color x:Key="PrimaryTextColor">White</Color>
             <!-- Styles -->
-            <!--
+            <!-- Implicit style (no key), targets all controls of type NavigationPage -->
             <Style TargetType="NavigationPage">
-                <Setter Property="BarBackgroundColor" Value="#ff5300" />
-                <Setter Property="BarTextColor" Value="White" />
+                <Setter Property="BarBackgroundColor" Value="{StaticResource PrimaryColor}" />
+                <Setter Property="BarTextColor" Value="{StaticResource PrimaryTextColor}" />
             </Style>
-            -->
-            <!-- Styles -->
-            <!--
-            <Color x:Key="PageBackgroundColor">Yellow</Color>
-            <Color x:Key="HeadingTextColor">Black</Color>
-            <Color x:Key="NormalTextColor">Blue</Color>
-            <Style x:Key="LabelPageHeadingStyle" TargetType="Label">
-                <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="HorizontalOptions" Value="Center" />
-                <Setter Property="TextColor" Value="{StaticResource HeadingTextColor}" />
-            </Style>
-                    -->
+            <!-- /Styles -->
         </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -8,15 +8,13 @@ namespace Posse
 {
     public partial class App : Application
     {
-        // visibility?
+        // TODO visibility?
         static MemberDatabase database;
 
         // Constructor
         public App()
         {
-            //Old:
-            //InitializeComponent();
-
+            InitializeComponent();
             MainPage = new NavigationPage(new MemberListPage());
         }
 

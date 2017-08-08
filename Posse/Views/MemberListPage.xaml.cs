@@ -21,7 +21,8 @@ namespace Posse
 		{
 			await Navigation.PushAsync(new MemberPage
 			{
-				BindingContext = new Member()
+				BindingContext = new Member(),
+                Title = "Add new Member"
 			});
 		}
 
