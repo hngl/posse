@@ -1,19 +1,13 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-// Needed? 
 using System.Diagnostics;
-// Old
-//using System.Collections.Generic;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Posse
 {
     public partial class App : Application
     {
-        // Old
-        // public static IList<string> Members { get; set; }
-
         // visibility?
         static MemberDatabase database;
 
@@ -22,20 +16,8 @@ namespace Posse
         {
             //Old:
             //InitializeComponent();
-            //Members = new List<string>();
-            //Members.Add("Jan Boomkap");
-            //Members.Add("Henk Stuivestijn");
-            //MainPage = new MemberListPage();
 
-            //Resources = new ResourceDictionary();
-            //Resources.Add("primaryGreen", Color.FromHex("91CA47"));
-            //Resources.Add("primaryDarkGreen", Color.FromHex("6FA22E"));
-
-            var nav = new NavigationPage(new MemberListPage());
-            //nav.BarBackgroundColor = (Color)App.Current.Resources["primaryGreen"];
-            //nav.BarTextColor = Color.White;
-
-            MainPage = nav;
+            MainPage = new NavigationPage(new MemberListPage());
         }
 
         public static MemberDatabase Database
